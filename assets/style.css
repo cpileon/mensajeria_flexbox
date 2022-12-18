@@ -10,46 +10,53 @@
 .contacts-box{
     display: flex;
     flex:0 0 20%;
-    background-color: blueviolet;
     flex-direction: column;
+    border: 2px solid #E8EBE4;
 }
 
-.user-box{
+.mainuser-box{
+
     display: flex;
     justify-content: space-between;
-    background-color: aliceblue;
-    padding: 3%;
+    padding: 5%;
 }
 
 /*Pequeño container para foto, nombre y status*/
-.user {
+.user, .contact {
+
     display: flex;
-    background-color: aqua;
     margin-left: 5%;
     margin-right: 5%;
     gap: 10px;
-
 }
 
-.user h2{
+.user, .contact, h2{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-weight: 400;
 }
 
-.user h3{
+.contact, h3{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: 300;
 }
 
 .user #status{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    color: #BEC1BB;
 
 }
 
 /*Formato para todas las imágenes de usuario*/
-.user img{
+.contact img{
     width: 50px;
+    border-radius: 50%;
+}
+
+.main img{
+    width: 40px;
     border-radius: 50%;
 }
 
@@ -58,49 +65,72 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu-buttons{
     display: flex;
     align-items: center;
     margin: auto;
-    gap: 20px;
+    gap: 10px;
 }
 
 .menu-buttons i{
-    font-size: 30px;
-    color:blue
+    font-size: 20px;
+    color: #828485;
 }
 
 hr{
-    border: 1px solid red;
+    border: 1px solid #E8EBE4;
 }
 
+/*Boton Nuevo Chat */
 .button{
     display: flex;
-    background-color: #233d23;
     justify-content: center;
     padding: 10%;
 }
+
 .chat-button{
-    background-color: #4CAF50;
+    background-color: #A491D2;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 50px;
     text-align: center;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 8px 2px;
     cursor: pointer;
 }
 
+.chat-button:hover{
+    background-color: #CDC3E6;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+}
+
+.contact{
+    padding-top: 3% ;
+    padding-bottom: 3%;
+}
+
 .logo-box{
-    background-color: #E8EBE4;
-    flex-grow: 2;
+    background-color: #f8f8f8;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.logo-box h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
 }
 
 
