@@ -125,7 +125,6 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .logo-box h1{
