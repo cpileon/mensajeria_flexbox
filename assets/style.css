@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+}
+
+.container-box{
+    display: flex;
+    width: 100%;
+}
+
+.contacts-box{
+    display: flex;
+    flex:0 0 20%;
+    background-color: blueviolet;
+    flex-direction: column;
+}
+
+.user-box{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 3%;
+}
+
+/*Pequeño container para foto, nombre y status*/
+.user {
+    display: flex;
+    background-color: aqua;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 10px;
+
+}
+
+.user h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.user h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.user #status{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+
+}
+
+/*Formato para todas las imágenes de usuario*/
+.user img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+/*Distribución nombre-estado para usar en cada usuario*/
+.user-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-buttons{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+}
+
+.menu-buttons i{
+    font-size: 30px;
+    color:blue
+}
+
+hr{
+    border: 1px solid red;
+}
+
+.button{
+    display: flex;
+    background-color: #233d23;
+    justify-content: center;
+    padding: 10%;
+}
+.chat-button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.logo-box{
+    background-color: #E8EBE4;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.logo-box img{
+    width: 20%;
+}
